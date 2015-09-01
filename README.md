@@ -6,6 +6,14 @@ Source: This utility uses the code examples from http://mattscodecave.com/posts/
 
 Usage examples:
 
+forward the webserver port 80 to your local machine:
+
+```
+./port-forward.py -v -e 80
+```
+
+full argument list:
+
 ```
 ./port-forward.py --help
 usage: port-forward.py [-h] [-v] [-e EPORT] [-l IPORT] [-i LANIP] [-r ROUTER]
@@ -32,12 +40,15 @@ optional arguments:
   -t TIME, --time TIME  Duration of the rule
 ```
 
+just show UPnP capable routers:
+
 ```
 ./port-forward.py 
 Found 2 UPnP routers:  192.168.1.1:49152 192.168.1.254:2189
 No external port specified.
 ```
 
+forward to a different local port for a few seconds only:
 
 ```
 ./port-forward.py -e 1337 -v -t 30 -r 192.168.1.1  -l 9999 -d 'forward 1337 to 9999'
