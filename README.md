@@ -1,4 +1,4 @@
-This is a simple command line utitly to forward ports from your router to a host in the LAN.
+This is a simple command line utility to forward ports from your router to a host in the LAN.
 
 For this to work, the UPnP feature must be enabled on your router.
 
