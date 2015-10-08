@@ -2,7 +2,7 @@ This is a simple command line utitly to forward ports from your router to a host
 
 For this to work, the UPnP feature must be enabled on your router.
 
-Source: This utility uses the code examples from http://mattscodecave.com/posts/using-python-and-upnp-to-forward-a-port
+Source: This utility uses the code examples from http://mattscodecave.com/posts/using-python-and-upnp-to-forward-a-port.html
 
 Usage examples:
 
