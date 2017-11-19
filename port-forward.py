@@ -108,6 +108,7 @@ def open_port(service_url,external_port,internal_client,internal_port=None,proto
     # setup the argument element names and values
     # using a list of tuples to preserve order
     arguments = [
+        ('NewRemoteHost', ""), # unused - but required
         ('NewExternalPort', external_port),           # specify port on router
         ('NewProtocol', protocol),                 # specify protocol
         ('NewInternalPort', internal_port),           # specify port on internal host
