@@ -20,7 +20,9 @@ portforwardlib.py can be imported and the function forwardPort ca be used to for
 ./port-forward.py -v -e 80
 ```
 
-**Full argument list:
+
+Full argument list:
+
 
 ```
 ./port-forward.py --help
@@ -68,7 +70,7 @@ port forward on 192.168.1.1 successful, 1337->192.168.1.22:9999
 ```
 
 <br><br>
-#### Use as a function:
+### Use as a function:
 
 ``` Python
 import portforwardlib 
