@@ -1,16 +1,46 @@
+
 This is a simple command line utility to forward ports from your router to a host in the LAN.
 
 For this to work, the UPnP feature must be enabled on your router.
 
 Source: This utility uses the code examples from http://mattscodecave.com/posts/using-python-and-upnp-to-forward-a-port.html
 
+Compatibility: 
+port-forward.py is compatible with python 2 allows line-command
+port-forward-3.py is compatible with python 3 allows line-command
+portforwardlib.py can be imported and the function forwardPort ca be used to forward a port.
+
+
 Usage examples:
 
+1.
 forward the webserver port 80 to your local machine:
 
 ```
 ./port-forward.py -v -e 80
 ```
+
+
+2. In python 3:
+
+''' Python
+import portforwardlib 
+
+result = porforwardlib.forwardPort(eport, iport, router, lanip, disable, protocol, time, description, verbose)
+
+'''
+eport: external port (router)
+iport: internal port (local machine)
+router: ip of the router, pass None to use automatically the routers found in your network
+lanip: ip of the local machine, pass None to use the ip of the machine where you are running the code
+disable: True to disable a previous port forwarded
+time: duration, pass 0 for indefinit time
+decription: a description that will appear in the interface of the router, pass None to use default description.
+verbose: Print process.
+result: True if forwarding was successful.
+
+
+
 
 full argument list:
 
