@@ -23,21 +23,22 @@ forward the webserver port 80 to your local machine:
 
 2. In python 3:
 
-''' Python
+``` Python
 import portforwardlib 
 
 result = porforwardlib.forwardPort(eport, iport, router, lanip, disable, protocol, time, description, verbose)
 
-'''
-eport: external port (router)
-iport: internal port (local machine)
-router: ip of the router, pass None to use automatically the routers found in your network
-lanip: ip of the local machine, pass None to use the ip of the machine where you are running the code
-disable: True to disable a previous port forwarded
-time: duration, pass 0 for indefinit time
-decription: a description that will appear in the interface of the router, pass None to use default description.
-verbose: Print process.
-result: True if forwarding was successful.
+```
+
+**eport**: external port (router).<br>
+**iport**: internal port (local machine).<br>
+**router**: ip of the router, pass None to use automatically the routers found in your network.<br>
+**lanip**: ip of the local machine, pass None to use the ip of the machine where you are running the code.<br>
+**disable**: True to disable a previous port forwarded.<br>
+**time**: duration, pass 0 for indefinit time.<br>
+**decription**: a description that will appear in the interface of the router, pass None to use default description.<br>
+**verbose**: Print process.<br>
+**result**: True if forwarding was successful.<br>
 
 
 
