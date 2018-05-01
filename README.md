@@ -13,15 +13,14 @@ portforwardlib.py can be imported and the function forwardPort ca be used to for
 
 Usage examples:
 
-1.
-forward the webserver port 80 to your local machine:
+1. Forward the webserver port 80 to your local machine:
 
 ```
 ./port-forward.py -v -e 80
 ```
 
 
-2. In python 3:
+2. Use as a function:
 
 ``` Python
 import portforwardlib 
