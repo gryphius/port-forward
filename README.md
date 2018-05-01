@@ -6,9 +6,9 @@ For this to work, the UPnP feature must be enabled on your router.
 Source: This utility uses the code examples from http://mattscodecave.com/posts/using-python-and-upnp-to-forward-a-port.html
 
 Compatibility: 
-port-forward.py is compatible with python 2 allows line-command
-port-forward-3.py is compatible with python 3 allows line-command
-portforwardlib.py can be imported and the function forwardPort ca be used to forward a port.
+port-forward.py is compatible with python 2 allows line-command.<br>
+port-forward-3.py is compatible with python 3 allows line-command.<br>
+portforwardlib.py can be imported and the function forwardPort ca be used to forward a port.<br>
 
 
 Usage examples:
@@ -30,15 +30,15 @@ result = porforwardlib.forwardPort(eport, iport, router, lanip, disable, protoco
 
 ```
 
-**eport**: external port (router).<br>
-**iport**: internal port (local machine).<br>
-**router**: ip of the router, pass None to use automatically the routers found in your network.<br>
-**lanip**: ip of the local machine, pass None to use the ip of the machine where you are running the code.<br>
-**disable**: True to disable a previous port forwarded.<br>
-**time**: duration, pass 0 for indefinit time.<br>
-**decription**: a description that will appear in the interface of the router, pass None to use default description.<br>
-**verbose**: Print process.<br>
-**result**: True if forwarding was successful.<br>
+**eport**     :    external port (router).<br>
+**iport**     :    internal port (local machine).<br>
+**router**    :    ip of the router, pass None to use automatically the routers found in your network.<br>
+**lanip**     :    ip of the local machine, pass None to use the ip of the machine where you are running the code.<br>
+**disable**   :    "True" to disable a previous port forwarded.<br>
+**time**      :    duration, pass 0 for indefinit time.<br>
+**decription**:    a description that will appear in the interface of the router, pass None to use default description.<br>
+**verbose**   :    print process.<br>
+**result**    :    "True" if forwarding was successful.<br>
 
 
 
